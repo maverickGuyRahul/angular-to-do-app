@@ -33,8 +33,8 @@
           <td>{{ task.priority }}</td>
           <td>{{ task.comments }}</td>
           <td>
-            <button class="action-button"><i class="edit-icon"></i></button>
-            <button class="action-button"><i class="delete-icon"></i></button>
+            <button (click)="editTask(task)" class="action-button"><i class="edit-icon"></i></button>
+            <button (click)="deleteTask(task)" class="action-button"><i class="delete-icon"></i></button>
           </td>
         </tr>
       </tbody>

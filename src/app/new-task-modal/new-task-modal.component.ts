@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input'; // For matInput
 import { MatSelectModule } from '@angular/material/select'; // For mat-select
 import { MatDatepickerModule } from '@angular/material/datepicker'; // For mat-datepicker
+import { MatNativeDateModule } from '@angular/material/core'; // For datepicker
 import { MatButtonModule } from '@angular/material/button'; // For mat-button
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'; // For MatDialog
 import { MAT_DATE_LOCALE } from '@angular/material/core'; // For date locale
-import { MatNativeDateModule } from '@angular/material/core'; // Include MatNativeDateModule for datepicker
 
 @Component({
   selector: 'app-new-task-modal',
@@ -41,7 +41,7 @@ export class NewTaskModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
     if (data && data.task) {
-      this.task = data.task; // Load the task data for editing
+      this.task = { ...data.task }; // Load the task data for editing
     }
   }
 

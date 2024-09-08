@@ -2,13 +2,16 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog'; // Import MatDialog
 import { NewTaskModalComponent } from '../new-task-modal/new-task-modal.component'; // Import your NewTaskModalComponent
+import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component'; // Import your ConfirmDialogComponent
+
+import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-task-list',
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css'],
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule, MatDialogModule]
 })
 export class TaskListComponent {
   tasks = [
@@ -53,6 +56,12 @@ export class TaskListComponent {
   }
 
   deleteTask(task: any) {
-    this.tasks = this.tasks.filter(t => t !== task);
+    const dialogRef = this.dialog.open(ConfirmDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.tasks = this.tasks.filter(t => t !== task);
+      }
+    });
   }
 }
