@@ -139,4 +139,30 @@
   .next-page-icon::before, .last-page-icon::before {
     content: "\23E9"; /* Fast Forward Icon */
   }
+
+  button.new-task-button {
+    background-color: yellow;
+    color: black; /* Ensures the text is visible on a yellow background */
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.new-task-button:hover {
+    background-color: #e0e000; /* A slightly different yellow for a hover effect */
+}
+
+button.new-task-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button.new-task-button:hover {
+    background-color: #e0e000; /* A slightly different yellow for hover effect */
+  }
   
