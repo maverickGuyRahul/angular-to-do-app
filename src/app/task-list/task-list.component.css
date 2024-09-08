@@ -1,0 +1,142 @@
+.task-list-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .record-count {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-task-button, .refresh-button {
+    background-color: #f0e68c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .new-task-button:hover, .refresh-button:hover {
+    background-color: #ddd96e;
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .task-table thead th {
+    background-color: #f5f5f5;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .task-table tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+  }
+  
+  .task-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .task-table td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .task-assigned {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .edit-icon::before {
+    content: "\270E"; /* Pencil Icon */
+  }
+  
+  .delete-icon::before {
+    content: "\1F5D1"; /* Trash Icon */
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pagination-dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  .first-page-icon::before, .prev-page-icon::before {
+    content: "\23EA"; /* Rewind Icon */
+  }
+  
+  .next-page-icon::before, .last-page-icon::before {
+    content: "\23E9"; /* Fast Forward Icon */
+  }
+  

@@ -1,0 +1,58 @@
+<div class="task-list-container">
+    <div class="header-controls">
+      <h1 class="header">Tasks</h1>
+      <span class="record-count">4 records</span>
+    </div>
+  
+    <div class="controls">
+      <button class="new-task-button">New Task</button>
+      <button class="refresh-button">Refresh</button>
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search">
+      </div>
+    </div>
+  
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Assigned To</th>
+          <th>Status</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Comments</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td><input type="checkbox"></td>
+          <td class="task-assigned">{{ task.assignedTo }}</td>
+          <td>{{ task.status }}</td>
+          <td>{{ task.dueDate }}</td>
+          <td>{{ task.priority }}</td>
+          <td>{{ task.comments }}</td>
+          <td>
+            <button class="action-button"><i class="edit-icon"></i></button>
+            <button class="action-button"><i class="delete-icon"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="pagination-container">
+      <select class="pagination-dropdown">
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+      <div class="pagination-controls">
+        <button class="pagination-button"><i class="first-page-icon"></i></button>
+        <button class="pagination-button"><i class="prev-page-icon"></i></button>
+        <span>1</span>
+        <button class="pagination-button"><i class="next-page-icon"></i></button>
+        <button class="pagination-button"><i class="last-page-icon"></i></button>
+      </div>
+    </div>
+  </div>
+  

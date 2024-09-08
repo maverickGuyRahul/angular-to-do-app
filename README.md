@@ -25,3 +25,100 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+```
+todo-app
+├─ 📁.vscode
+│  ├─ 📄extensions.json
+│  ├─ 📄launch.json
+│  └─ 📄tasks.json
+├─ 📁public
+│  └─ 📄favicon.ico
+├─ 📁src
+│  ├─ 📁app
+│  │  ├─ 📁task-edit
+│  │  │  ├─ 📄task-edit.component.css
+│  │  │  ├─ 📄task-edit.component.html
+│  │  │  ├─ 📄task-edit.component.spec.ts
+│  │  │  └─ 📄task-edit.component.ts
+│  │  ├─ 📁task-form
+│  │  │  ├─ 📄task-form.component.css
+│  │  │  ├─ 📄task-form.component.html
+│  │  │  ├─ 📄task-form.component.spec.ts
+│  │  │  └─ 📄task-form.component.ts
+│  │  ├─ 📁task-list
+│  │  │  ├─ 📄task-list.component.css
+│  │  │  ├─ 📄task-list.component.html
+│  │  │  ├─ 📄task-list.component.spec.ts
+│  │  │  └─ 📄task-list.component.ts
+│  │  ├─ 📄app.component.css
+│  │  ├─ 📄app.component.html
+│  │  ├─ 📄app.component.spec.ts
+│  │  ├─ 📄app.component.ts
+│  │  ├─ 📄app.config.server.ts
+│  │  ├─ 📄app.config.ts
+│  │  └─ 📄app.routes.ts
+│  ├─ 📄index.html
+│  ├─ 📄main.server.ts
+│  ├─ 📄main.ts
+│  └─ 📄styles.css
+├─ 📄.editorconfig
+├─ 📄.gitignore
+├─ 📄README.md
+├─ 📄angular.json
+├─ 📄package-lock.json
+├─ 📄package.json
+├─ 📄server.ts
+├─ 📄tsconfig.app.json
+├─ 📄tsconfig.json
+└─ 📄tsconfig.spec.json
+```
+```
+todo-app
+├─ 📁.angular
+├─ 📁.vscode
+│  ├─ 📄extensions.json
+│  ├─ 📄launch.json
+│  └─ 📄tasks.json
+├─ 📁public
+│  └─ 📄favicon.ico
+├─ 📁src
+│  ├─ 📁app
+│  │  ├─ 📁task-edit
+│  │  │  ├─ 📄task-edit.component.css
+│  │  │  ├─ 📄task-edit.component.html
+│  │  │  ├─ 📄task-edit.component.spec.ts
+│  │  │  └─ 📄task-edit.component.ts
+│  │  ├─ 📁task-form
+│  │  │  ├─ 📄task-form.component.css
+│  │  │  ├─ 📄task-form.component.html
+│  │  │  ├─ 📄task-form.component.spec.ts
+│  │  │  └─ 📄task-form.component.ts
+│  │  ├─ 📁task-list
+│  │  │  ├─ 📄task-list.component.css
+│  │  │  ├─ 📄task-list.component.html
+│  │  │  ├─ 📄task-list.component.spec.ts
+│  │  │  └─ 📄task-list.component.ts
+│  │  ├─ 📄app.component.css
+│  │  ├─ 📄app.component.html
+│  │  ├─ 📄app.component.spec.ts
+│  │  ├─ 📄app.component.ts
+│  │  ├─ 📄app.config.server.ts
+│  │  ├─ 📄app.config.ts
+│  │  ├─ 📄app.module.ts
+│  │  └─ 📄app.routes.ts
+│  ├─ 📄index.html
+│  ├─ 📄main.server.ts
+│  ├─ 📄main.ts
+│  └─ 📄styles.css
+├─ 📄.editorconfig
+├─ 📄.gitignore
+├─ 📄README.md
+├─ 📄angular.json
+├─ 📄package-lock.json
+├─ 📄package.json
+├─ 📄server.ts
+├─ 📄tsconfig.app.json
+├─ 📄tsconfig.json
+└─ 📄tsconfig.spec.json
+```
