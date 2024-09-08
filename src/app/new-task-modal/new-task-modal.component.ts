@@ -1,13 +1,13 @@
 import { Component, Inject } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { MatInputModule } from '@angular/material/input'; // For matInput
-import { MatSelectModule } from '@angular/material/select'; // For mat-select
-import { MatDatepickerModule } from '@angular/material/datepicker'; // For mat-datepicker
-import { MatNativeDateModule } from '@angular/material/core'; // For datepicker
-import { MatButtonModule } from '@angular/material/button'; // For mat-button
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'; // For MatDialog
-import { MAT_DATE_LOCALE } from '@angular/material/core'; // For date locale
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 @Component({
   selector: 'app-new-task-modal',
@@ -16,15 +16,15 @@ import { MAT_DATE_LOCALE } from '@angular/material/core'; // For date locale
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule, // Include FormsModule here
+    FormsModule,
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule, // Include MatNativeDateModule for datepicker
+    MatNativeDateModule,
     MatButtonModule
   ],
   providers: [
-    { provide: MAT_DATE_LOCALE, useValue: 'en-US' } // Provide MAT_DATE_LOCALE
+    { provide: MAT_DATE_LOCALE, useValue: 'en-US' }
   ]
 })
 export class NewTaskModalComponent {
@@ -41,15 +41,15 @@ export class NewTaskModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
     if (data && data.task) {
-      this.task = { ...data.task }; // Load the task data for editing
+      this.task = { ...data.task };
     }
   }
 
   save() {
-    this.dialogRef.close(this.task); // Close the dialog and return the task data
+    this.dialogRef.close(this.task);
   }
 
   cancel() {
-    this.dialogRef.close(); // Close the dialog without returning data
+    this.dialogRef.close();
   }
 }
